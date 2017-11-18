@@ -1,5 +1,5 @@
 schema: kata.ai/schema/kata-ml/1.0
-name: Seto-chan
+name: LearnIT
 desc: Bot Description
 version: 1.0.0
 flows:
@@ -12,5 +12,5 @@ methods:
     'confidenceLevel(message,context,data,options,config)':
         code: 'function confidenceLevel(message, context, data, options, config) { if (message.content === "hi") return 1; return 0; }'
         entry: confidenceLevel
-id: '1547182966'
+id: '1547197365'
 tag: null

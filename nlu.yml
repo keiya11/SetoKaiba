@@ -1,9 +1,3 @@
-greet:
-    type: keyword
-    options:
-        keywords:
-            hello:
-                - hello
-                - hallo
-                - hai
-                - hi
+confidenceLevel:
+    type: method
+    method: confidenceLevel

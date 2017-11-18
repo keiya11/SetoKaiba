@@ -5,7 +5,8 @@ intents:
         initial: true
         type: text
         classifier:
-            nlu: greet
+            nlu: confidenceLevel
+            match: 1
     dunno:
         fallback: true
 states:
