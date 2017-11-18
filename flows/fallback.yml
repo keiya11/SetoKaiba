@@ -6,7 +6,6 @@ intents:
         type: text
         classifier:
             nlu: greet
-            match: 1
     dunno:
         fallback: true
 states:

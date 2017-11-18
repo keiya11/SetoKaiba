@@ -13,3 +13,4 @@ methods:
         code: 'function confidenceLevel(message, context, data, options, config) { if (message.content === "hi") return 1; return 0; }'
         entry: confidenceLevel
 id: '1547182966'
+tag: null
