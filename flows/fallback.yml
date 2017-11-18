@@ -1,0 +1,42 @@
+priority: 0
+fallback: true
+intents:
+    hi:
+        initial: true
+        type: text
+        classifier:
+            nlu: greet
+            match: 1
+    dunno:
+        fallback: true
+states:
+    init:
+        initial: true
+        transitions:
+            sayHi:
+                condition: intent=="hi"
+            sorry:
+                fallback: true
+    sayHi:
+        end: true
+        action:
+            -
+                name: sayHi
+    sorry:
+        end: true
+        action:
+            -
+                name: saySorry
+actions:
+    sayHi:
+        type: text
+        options:
+            data: $(config.messages)
+            path: templates
+            template: '$[sayHi]'
+    saySorry:
+        type: text
+        options:
+            data: $(config.messages)
+            path: templates
+            template: '$[saySorry]'

@@ -1,0 +1,9 @@
+greet:
+    type: keyword
+    options:
+        keywords:
+            hello:
+                - hello
+                - hallo
+                - hai
+                - hi
